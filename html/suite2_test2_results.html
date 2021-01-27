@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - PlatformOne_Regression_test-2</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>PlatformOne_Regression_test-2</h1>
+<p>
+  Test duration: 92.758s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.test.PlatformOneHarness.PlatformOneHarness_History</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Create History API .">verifyCreateHistoryAPI</span>
+      </td>
+  <td class="duration">
+    23.363s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Create History API]</b><br>
+                                >        Step-9:Verifying Create History API<br>
+                                <b>Step: [Click On History API Link]</b><br>
+                                >        Step-10:Clicking on History API. <br>
+                                >        Step-11:Click "//span[contains(.,'History')]"<br>
+                                <b>Step: [Platform One Harness Create History API]</b><br>
+                                >        Step-12:Clicking on Create History. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Create History')]"<br>
+                                >        Step-14:Selecting Type . <br>
+                                >        Step-15:Select "//select[@name='type']" with option text:Search<br>
+                                >        Step-16:Entering Value. <br>
+                                >        Step-17:Type "2" in "//input[@name='value']"<br>
+                                >        Step-18:Entering Entity ID. <br>
+                                >        Step-19:Type "2" in "//input[@name='entityId']"<br>
+                                >        Step-20:Selecting Entity Type . <br>
+                                >        Step-21:Select "//select[@name='entityType']" with option text:Segment<br>
+                                >        Step-22:Clicking on Submit Button. <br>
+                                >        Step-23:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-24:Verify Response for Create History API. <br>
+                                >        Step-25:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=200
+{
+    "id": 24742,
+    "userName": "reema.vishwani@neustar.biz",
+    "type": "Search",
+    "value": "2",
+    "entityId": 2,
+    "entityType": "Segment",
+    "eventDate": "2015-05-04T08:43:45.021Z"
+}<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-26:Actual Text : "HTTP status=200" matches with ,  Expected Text : "HTTP status=200"<br>
+                                <b>Step: [Verify Nodes]</b><br>
+                                >        Step-27:Response contains Expected Nodes.....id<br>
+                                >        Step-28:Response contains Expected Nodes..... userName<br>
+                                >        Step-29:Response contains Expected Nodes..... type<br>
+                                >        Step-30:Response contains Expected Nodes..... value<br>
+                                >        Step-31:Response contains Expected Nodes..... entityId<br>
+                                >        Step-32:Response contains Expected Nodes..... entityType<br>
+                                >        Step-33:Response contains Expected Nodes..... eventDate<br>
+                                <b>Step: [Platform One Harness Create History API]</b><br>
+                                >        Step-34:Response contains Expected entityType: Segment<br>
+                                >        Step-35:Response contains Expected Type. Search<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies List History API .">verifyListHistoryAPI</span>
+      </td>
+  <td class="duration">
+    22.922s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness List History API]</b><br>
+                                >        Step-9:Verifying Create History API<br>
+                                <b>Step: [Click On History API Link]</b><br>
+                                >        Step-10:Clicking on History API. <br>
+                                >        Step-11:Click "//span[contains(.,'History')]"<br>
+                                <b>Step: [Platform One Harness List History API]</b><br>
+                                >        Step-12:Clicking on Create History. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'List History')]"<br>
+                                >        Step-14:Selecting Type . <br>
+                                >        Step-15:Select "//select[@name='type']" with option text:Search<br>
+                                >        Step-16:Selecting Entity Type . <br>
+                                >        Step-17:Select "//select[@name='entityType']" with option text:Segment<br>
+                                >        Step-18:Entering Count. <br>
+                                >        Step-19:Type "5" in "//input[@name='count']"<br>
+                                >        Step-20:Select Load icon. <br>
+                                >        Step-21:Click "//input[@name='loadIcons'][1]"<br>
+                                >        Step-22:Clicking on Submit Button. <br>
+                                >        Step-23:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-24:Verify Response for List History API. <br>
+                                >        Step-25:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=200
+[
+    {
+        "id": 2,
+        "type": "Search",
+        "value": "2",
+        "entityId": 2,
+        "entityType": "Segment",
+        "eventDate": "2015-05-04T08:43:45.021Z"
+    },
+    {
+        "id": 1,
+        "type": "Search",
+        "value": "1",
+        "entityId": 1,
+        "entityType": "Segment",
+        "eventDate": "2015-04-20T09:18:37.990Z"
+    }
+]<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-26:Actual Text : "HTTP status=200" matches with ,  Expected Text : "HTTP status=200"<br>
+                                <b>Step: [Verify Nodes]</b><br>
+                                >        Step-27:Response contains Expected Nodes.....id<br>
+                                >        Step-28:Response contains Expected Nodes..... type<br>
+                                >        Step-29:Response contains Expected Nodes..... value<br>
+                                >        Step-30:Response contains Expected Nodes..... entityId<br>
+                                >        Step-31:Response contains Expected Nodes..... entityType<br>
+                                >        Step-32:Response contains Expected Nodes..... eventDate<br>
+                                <b>Step: [Platform One Harness List History API]</b><br>
+                                >        Step-33:Response contains Expected Type. Search<br>
+                                >        Step-34:Response contains Expected entityType: Segment<br>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

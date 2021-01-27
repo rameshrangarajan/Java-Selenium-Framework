@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - PlatformOne_Regression_test-1</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>PlatformOne_Regression_test-1</h1>
+<p>
+  Test duration: 60.692s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.test.PlatformOneHarness.PlatformOneHarness_Search</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Global Search API .">verifyGlobalSearchAPI</span>
+      </td>
+  <td class="duration">
+    36.347s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Global Search API]</b><br>
+                                >        Step-9:Verifying Search API<br>
+                                <b>Step: [Click On Search API Link]</b><br>
+                                >        Step-10:Clicking on Search API. <br>
+                                >        Step-11:Click "//span[contains(.,'Search')]"<br>
+                                <b>Step: [Platform One Harness Global Search API]</b><br>
+                                >        Step-12:Clicking on Global Search. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Global Search')]"<br>
+                                >        Step-14:Selecting Entity Type . <br>
+                                >        Step-15:Click "//select[@name='entityTypes']"<br>
+                                >        Step-16:Select "//select[@name='entityTypes']" with option text:Taxonomy<br>
+                                >        Step-17:Selecting Search Type . <br>
+                                >        Step-18:Select "//select[@name='searchType']" with option text:LICENSED<br>
+                                >        Step-19:Selecting Deep Search . <br>
+                                >        Step-20:Click "//input[@name='deepSearch'][1]"<br>
+                                >        Step-21:Selecting Latest Published Version . <br>
+                                >        Step-22:Click "//input[@name='latestPublishedVersion'][1]"<br>
+                                >        Step-23:Select Sort Field for Search. <br>
+                                >        Step-24:Selected Element: "//select[@name='sortField']" with option value:sortName<br>
+                                >        Step-25:Select Sort Order for Search. <br>
+                                >        Step-26:Selected Element: "//select[@name='sortOrder']" with option value:ASC<br>
+                                >        Step-27:Enter Page Number for Search. <br>
+                                >        Step-28:Type "1" in "//input[@name='pageNumber']"<br>
+                                >        Step-29:Enter Page Size for Search. <br>
+                                >        Step-30:Type "5" in "//input[@name='pageSize']"<br>
+                                >        Step-31:Clicking on Submit Button. <br>
+                                >        Step-32:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-33:Verify Response for Global Search API. <br>
+                                >        Step-34:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=200
+{
+    "totalCount": 3,
+    "pageSize": 5,
+    "pageNumber": 1,
+    "results": [
+        {
+            "name": "Restricted AdAdvisor Audiences",
+            "id": 55,
+            "rootTaxonomyNodeId": 9453,
+            "entityType": "Taxonomy"
+        },
+        {
+            "name": "Net Asset Value",
+            "id": 9,
+            "rootTaxonomyNodeId": 4124,
+            "entityType": "Taxonomy"
+        },
+        {
+            "name": "Buying Power Score",
+            "id": 8,
+            "rootTaxonomyNodeId": 4120,
+            "entityType": "Taxonomy"
+        }
+    ],
+    "end": 3,
+    "start": 1,
+    "lastPage": 1
+}<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-35:Actual Text : "HTTP status=200" matches with ,  Expected Text : "HTTP status=200"<br>
+                                <b>Step: [Verify Nodes]</b><br>
+                                >        Step-36:Response contains Expected Nodes.....totalCount<br>
+                                >        Step-37:Response contains Expected Nodes..... pageSize<br>
+                                >        Step-38:Response contains Expected Nodes..... pageNumber<br>
+                                >        Step-39:Response contains Expected Nodes..... results<br>
+                                >        Step-40:Response contains Expected Nodes..... id<br>
+                                >        Step-41:Response contains Expected Nodes..... lastPage<br>
+                                >        Step-42:Response contains Expected Nodes..... name<br>
+                                >        Step-43:Response contains Expected Nodes..... entityType<br>
+                                >        Step-44:Response contains Expected Nodes..... rootTaxonomyNodeId<br>
+                                <b>Step: [Platform One Harness Global Search API]</b><br>
+                                >        Step-45:Response contains Expected pageSize: Taxonomy<br>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

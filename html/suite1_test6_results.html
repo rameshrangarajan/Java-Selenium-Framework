@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - TA_Regression_test-6</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>TA_Regression_test-6</h1>
+<p>
+  Test duration: 220.567s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  Logout
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Logout]</b><br>
+                                >        Step-18:Clicking on LOGOUT Link. <br>
+                                >        Step-19:<font color='red'>"//button[@ng-click='logout()']" not found on page, Wait:60</font><br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.Error: Error communicating with the remote browser. It may have died.<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;<br/>
+System info: host: &apos;MVTL1059LT&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              com.saf.global.ActionMethods.logWithScreenshot(ActionMethods.java:767)<br />
+              com.saf.global.ActionMethods.fail(ActionMethods.java:199)<br />
+              com.saf.global.ActionMethods.waitForElement(ActionMethods.java:1345)<br />
+              com.saf.global.ActionMethods.waitForElement(ActionMethods.java:1292)<br />
+              com.saf.global.ActionMethods.click(ActionMethods.java:400)<br />
+              com.saf.global.ActionMethods.clickAndWait(ActionMethods.java:257)<br />
+              com.NPP.PlatformOneHarness.PlatformOneHarnessLoginLogout.platformOneHarnessLogout(PlatformOneHarnessLoginLogout.java:23)<br />
+              com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission.Logout(PlatformOneHarness_PlatformPermission.java:22)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:786)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+    
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Delete Platform Permissions API .">verifyDeletePlatformPermissionsAPI</span>
+      </td>
+  <td class="duration">
+    9.658s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Delete Platform Permissions API]</b><br>
+                                >        Step-9:Verifying Delete Platform Permissions API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness Delete Platform Permissions API]</b><br>
+                                >        Step-12:Clicking on Delete Platform Permissions. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Delete Platform Permission')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Snapshot Error : Session [c521251a-708a-4a1a-8930-3eb7499727c7] was terminated due to FORWARDING_TO_NODE_FAILED
+Command duration or timeout: 290 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'MVTL1059LT', ip: '192.168.180.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Session ID: c521251a-708a-4a1a-8930-3eb7499727c7
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=c521251a-708a-4a1a-8930-3eb7499727c7, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]<br>
+                                >        Step-16:Page Source Error : Session [c521251a-708a-4a1a-8930-3eb7499727c7] was terminated due to FORWARDING_TO_NODE_FAILED
+Command duration or timeout: 291 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'MVTL1059LT', ip: '192.168.180.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Session ID: c521251a-708a-4a1a-8930-3eb7499727c7
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=c521251a-708a-4a1a-8930-3eb7499727c7, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]<br>
+                                >        Step-17:<font color='red'>Unable to type in "//input[@name='accountId']" Error: cannot forward the request Connect to 10.77.3.189:5555 [/10.77.3.189] failed: Connection refused
+Command duration or timeout: 330 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'MVTL1059LT', ip: '192.168.180.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Session ID: c521251a-708a-4a1a-8930-3eb7499727c7
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=c521251a-708a-4a1a-8930-3eb7499727c7, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</font> <a href="file:/C:/Snapshots/npp-automation/Snapshot_2015042720373822319firefox.png" target=_blank>Snapshot</a> <a href="file:/C:/Snapshots/npp-automation/Snapshot_2015042720373822319firefox.html" target=_blank>html</a><br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.Error: &lt;font color=&apos;red&apos;&gt;Unable to type in &quot;//input[@name=&apos;accountId&apos;]&quot; Error: cannot forward the request Connect to 10.77.3.189:5555 [/10.77.3.189] failed: Connection refused<br/>
+Command duration or timeout: 330 milliseconds<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;<br/>
+System info: host: &apos;MVTL1059LT&apos;, ip: &apos;192.168.180.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;<br/>
+Session ID: c521251a-708a-4a1a-8930-3eb7499727c7<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=c521251a-708a-4a1a-8930-3eb7499727c7, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]&lt;/font&gt; &lt;a href=&quot;file:/C:/Snapshots/npp-automation/Snapshot_2015042720373822319firefox.png&quot; target=_blank&gt;Snapshot&lt;/a&gt; &lt;a href=&quot;file:/C:/Snapshots/npp-automation/Snapshot_2015042720373822319firefox.html&quot; target=_blank&gt;html&lt;/a&gt;</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              com.saf.global.ActionMethods.logWithScreenshot(ActionMethods.java:808)<br />
+              com.saf.global.ActionMethods.fail(ActionMethods.java:199)<br />
+              com.saf.global.ActionMethods.type(ActionMethods.java:1135)<br />
+              com.NPP.PlatformOneHarness.PlatformOneHarnessPlatformPermission.platformOneHarnessDeletePlatformPermissionsAPI(PlatformOneHarnessPlatformPermission.java:167)<br />
+              com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission.verifyDeletePlatformPermissionsAPI(PlatformOneHarness_PlatformPermission.java:56)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Create All Platform Permissions API .">verifyCreateAllPlatformPermissionsAPI</span>
+      </td>
+  <td class="duration">
+    22.191s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Create All Platform Permissions API]</b><br>
+                                >        Step-9:Verifying Create All Platform Permissions API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness Create All Platform Permissions API]</b><br>
+                                >        Step-12:Clicking on Create All Platform Permissions. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Create All Platform Permissions')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Type "35067" in "//input[@name='accountId']"<br>
+                                >        Step-16:Clicking on Submit Button. <br>
+                                >        Step-17:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-18:Pause: 8 secs<br>
+                                >        Step-19:Verify Response for Create All Platform Permissions API. <br>
+                                >        Step-20:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=200
+[
+    {
+        "id": 5120,
+        "platformId": 1,
+        "accountId": 35067
+    },
+    {
+        "id": 5121,
+        "platformId": 2,
+        "accountId": 35067
+    },
+    {
+        "id": 5122,
+        "platformId": 3,
+        "accountId": 35067
+    },
+    {
+        "id": 5123,
+        "platformId": 4,
+        "accountId": 35067
+    },
+    {
+        "id": 5124,
+        "platformId": 5,
+        "accountId": 35067
+    },
+    {
+        "id": 5125,
+        "platformId": 6,
+        "accountId": 35067
+    },
+    {
+        "id": 5126,
+        "platformId": 7,
+        "accountId": 35067
+    },
+    {
+        "id": 5127,
+        "platformId": 8,
+        "accountId": 35067
+    },
+    {
+        "id": 5128,
+        "platformId": 9,
+        "accountId": 35067
+    },
+    {
+        "id": 5129,
+        "platformId": 10,
+        "accountId": 35067
+    },
+    {
+        "id": 5130,
+        "platformId": 14,
+        "accountId": 35067
+    },
+    {
+        "id": 5131,
+        "platformId": 15,
+        "accountId": 35067
+    },
+    {
+        "id": 5132,
+        "platformId": 17,
+        "accountId": 35067
+    },
+    {
+        "id": 5133,
+        "platformId": 16,
+        "accountId": 35067
+    },
+    {
+        "id": 5134,
+        "platformId": 19,
+        "accountId": 35067
+    },
+    {
+        "id": 5135,
+        "platformId": 18,
+        "accountId": 35067
+    },
+    {
+        "id": 5136,
+        "platformId": 21,
+        "accountId": 35067
+    },
+    {
+        "id": 5137,
+        "platformId": 20,
+        "accountId": 35067
+    },
+    {
+        "id": 5138,
+        "platformId": 23,
+        "accountId": 35067
+    },
+    {
+        "id": 5139,
+        "platformId": 22,
+        "accountId": 35067
+    },
+    {
+        "id": 5140,
+        "platformId": 25,
+        "accountId": 35067
+    },
+    {
+        "id": 5141,
+        "platformId": 24,
+        "accountId": 35067
+    },
+    {
+        "id": 5142,
+        "platformId": 27,
+        "accountId": 35067
+    },
+    {
+        "id": 5143,
+        "platformId": 26,
+        "accountId": 35067
+    },
+    {
+        "id": 5144,
+        "platformId": 29,
+        "accountId": 35067
+    },
+    {
+        "id": 5145,
+        "platformId": 28,
+        "accountId": 35067
+    },
+    {
+        "id": 5146,
+        "platformId": 31,
+        "accountId": 35067
+    },
+    {
+        "id": 5147,
+        "platformId": 30,
+        "accountId": 35067
+    },
+    {
+        "id": 5148,
+        "platformId": 32,
+        "accountId": 35067
+    },
+    {
+        "id": 5149,
+        "platformId": 55,
+        "accountId": 35067
+    },
+    {
+        "id": 5150,
+        "platformId": 53,
+        "accountId": 35067
+    },
+    {
+        "id": 5151,
+        "platformId": 59,
+        "accountId": 35067
+    },
+    {
+        "id": 5152,
+        "platformId": 58,
+        "accountId": 35067
+    },
+    {
+        "id": 5153,
+        "platformId": 57,
+        "accountId": 35067
+    },
+    {
+        "id": 5154,
+        "platformId": 56,
+        "accountId": 35067
+    },
+    {
+        "id": 5155,
+        "platformId": 63,
+        "accountId": 35067
+    },
+    {
+        "id": 5156,
+        "platformId": 68,
+        "accountId": 35067
+    },
+    {
+        "id": 5157,
+        "platformId": 69,
+        "accountId": 35067
+    },
+    {
+        "id": 5158,
+        "platformId": 70,
+        "accountId": 35067
+    },
+    {
+        "id": 5159,
+        "platformId": 71,
+        "accountId": 35067
+    },
+    {
+        "id": 5160,
+        "platformId": 64,
+        "accountId": 35067
+    },
+    {
+        "id": 5161,
+        "platformId": 66,
+        "accountId": 35067
+    },
+    {
+        "id": 5162,
+        "platformId": 67,
+        "accountId": 35067
+    },
+    {
+        "id": 5163,
+        "platformId": 76,
+        "accountId": 35067
+    },
+    {
+        "id": 5164,
+        "platformId": 77,
+        "accountId": 35067
+    },
+    {
+        "id": 5165,
+        "platformId": 78,
+        "accountId": 35067
+    },
+    {
+        "id": 5166,
+        "platformId": 79,
+        "accountId": 35067
+    },
+    {
+        "id": 5167,
+        "platformId": 72,
+        "accountId": 35067
+    },
+    {
+        "id": 5168,
+        "platformId": 73,
+        "accountId": 35067
+    },
+    {
+        "id": 5169,
+        "platformId": 74,
+        "accountId": 35067
+    },
+    {
+        "id": 5170,
+        "platformId": 85,
+        "accountId": 35067
+    },
+    {
+        "id": 5171,
+        "platformId": 84,
+        "accountId": 35067
+    },
+    {
+        "id": 5172,
+        "platformId": 87,
+        "accountId": 35067
+    },
+    {
+        "id": 5173,
+        "platformId": 86,
+        "accountId": 35067
+    },
+    {
+        "id": 5174,
+        "platformId": 81,
+        "accountId": 35067
+    },
+    {
+        "id": 5175,
+        "platformId": 80,
+        "accountId": 35067
+    },
+    {
+        "id": 5176,
+        "platformId": 83,
+        "accountId": 35067
+    },
+    {
+        "id": 5177,
+        "platformId": 82,
+        "accountId": 35067
+    },
+    {
+        "id": 5178,
+        "platformId": 93,
+        "accountId": 35067
+    },
+    {
+        "id": 5179,
+        "platformId": 92,
+        "accountId": 35067
+    },
+    {
+        "id": 5180,
+        "platformId": 95,
+        "accountId": 35067
+    },
+    {
+        "id": 5181,
+        "platformId": 94,
+        "accountId": 35067
+    },
+    {
+        "id": 5182,
+        "platformId": 91,
+        "accountId": 35067
+    },
+    {
+        "id": 5183,
+        "platformId": 90,
+        "accountId": 35067
+    },
+    {
+        "id": 5184,
+        "platformId": 102,
+        "accountId": 35067
+    },
+    {
+        "id": 5185,
+        "platformId": 103,
+        "accountId": 35067
+    },
+    {
+        "id": 5186,
+        "platformId": 100,
+        "accountId": 35067
+    },
+    {
+        "id": 5187,
+        "platformId": 101,
+        "accountId": 35067
+    },
+    {
+        "id": 5188,
+        "platformId": 98,
+        "accountId": 35067
+    },
+    {
+        "id": 5189,
+        "platformId": 99,
+        "accountId": 35067
+    },
+    {
+        "id": 5190,
+        "platformId": 96,
+        "accountId": 35067
+    },
+    {
+        "id": 5191,
+        "platformId": 97,
+        "accountId": 35067
+    },
+    {
+        "id": 5192,
+        "platformId": 110,
+        "accountId": 35067
+    },
+    {
+        "id": 5193,
+        "platformId": 111,
+        "accountId": 35067
+    },
+    {
+        "id": 5194,
+        "platformId": 108,
+        "accountId": 35067
+    },
+    {
+        "id": 5195,
+        "platformId": 109,
+        "accountId": 35067
+    },
+    {
+        "id": 5196,
+        "platformId": 106,
+        "accountId": 35067
+    },
+    {
+        "id": 5197,
+        "platformId": 107,
+        "accountId": 35067
+    },
+    {
+        "id": 5198,
+        "platformId": 104,
+        "accountId": 35067
+    },
+    {
+        "id": 5199,
+        "platformId": 105,
+        "accountId": 35067
+    },
+    {
+        "id": 5200,
+        "platformId": 118,
+        "accountId": 35067
+    },
+    {
+        "id": 5201,
+        "platformId": 117,
+        "accountId": 35067
+    },
+    {
+        "id": 5202,
+        "platformId": 116,
+        "accountId": 35067
+    },
+    {
+        "id": 5203,
+        "platformId": 115,
+        "accountId": 35067
+    },
+    {
+        "id": 5204,
+        "platformId": 114,
+        "accountId": 35067
+    },
+    {
+        "id": 5205,
+        "platformId": 113,
+        "accountId": 35067
+    },
+    {
+        "id": 5206,
+        "platformId": 112,
+        "accountId": 35067
+    },
+    {
+        "id": 5207,
+        "platformId": 127,
+        "accountId": 35067
+    },
+    {
+        "id": 5208,
+        "platformId": 126,
+        "accountId": 35067
+    },
+    {
+        "id": 5209,
+        "platformId": 125,
+        "accountId": 35067
+    },
+    {
+        "id": 5210,
+        "platformId": 124,
+        "accountId": 35067
+    },
+    {
+        "id": 5211,
+        "platformId": 123,
+        "accountId": 35067
+    },
+    {
+        "id": 5212,
+        "platformId": 122,
+        "accountId": 35067
+    },
+    {
+        "id": 5213,
+        "platformId": 121,
+        "accountId": 35067
+    },
+    {
+        "id": 5214,
+        "platformId": 120,
+        "accountId": 35067
+    },
+    {
+        "id": 5215,
+        "platformId": 137,
+        "accountId": 35067
+    },
+    {
+        "id": 5216,
+        "platformId": 136,
+        "accountId": 35067
+    },
+    {
+        "id": 5217,
+        "platformId": 139,
+        "accountId": 35067
+    },
+    {
+        "id": 5218,
+        "platformId": 138,
+        "accountId": 35067
+    },
+    {
+        "id": 5219,
+        "platformId": 141,
+        "accountId": 35067
+    },
+    {
+        "id": 5220,
+        "platformId": 140,
+        "accountId": 35067
+    },
+    {
+        "id": 5221,
+        "platformId": 143,
+        "accountId": 35067
+    },
+    {
+        "id": 5222,
+        "platformId": 129,
+        "accountId": 35067
+    },
+    {
+        "id": 5223,
+        "platformId": 128,
+        "accountId": 35067
+    },
+    {
+        "id": 5224,
+        "platformId": 131,
+        "accountId": 35067
+    },
+    {
+        "id": 5225,
+        "platformId": 130,
+        "accountId": 35067
+    },
+    {
+        "id": 5226,
+        "platformId": 135,
+        "accountId": 35067
+    },
+    {
+        "id": 5227,
+        "platformId": 134,
+        "accountId": 35067
+    },
+    {
+        "id": 5228,
+        "platformId": 158,
+        "accountId": 35067
+    },
+    {
+        "id": 5229,
+        "platformId": 144,
+        "accountId": 35067
+    },
+    {
+        "id": 5230,
+        "platformId": 146,
+        "accountId": 35067
+    },
+    {
+        "id": 5231,
+        "platformId": 147,
+        "accountId": 35067
+    },
+    {
+        "id": 5232,
+        "platformId": 171,
+        "accountId": 35067
+    },
+    {
+        "id": 5233,
+        "platformId": 170,
+        "accountId": 35067
+    },
+    {
+        "id": 5234,
+        "platformId": 169,
+        "accountId": 35067
+    },
+    {
+        "id": 5235,
+        "platformId": 175,
+        "accountId": 35067
+    },
+    {
+        "id": 5236,
+        "platformId": 174,
+        "accountId": 35067
+    },
+    {
+        "id": 5237,
+        "platformId": 173,
+        "accountId": 35067
+    },
+    {
+        "id": 5238,
+        "platformId": 172,
+        "accountId": 35067
+    },
+    {
+        "id": 5239,
+        "platformId": 163,
+        "accountId": 35067
+    },
+    {
+        "id": 5240,
+        "platformId": 162,
+        "accountId": 35067
+    },
+    {
+        "id": 5241,
+        "platformId": 161,
+        "accountId": 35067
+    },
+    {
+        "id": 5242,
+        "platformId": 160,
+        "accountId": 35067
+    },
+    {
+        "id": 5243,
+        "platformId": 167,
+        "accountId": 35067
+    },
+    {
+        "id": 5244,
+        "platformId": 164,
+        "accountId": 35067
+    },
+    {
+        "id": 5245,
+        "platformId": 186,
+        "accountId": 35067
+    },
+    {
+        "id": 5246,
+        "platformId": 187,
+        "accountId": 35067
+    },
+    {
+        "id": 5247,
+        "platformId": 185,
+        "accountId": 35067
+    },
+    {
+        "id": 5248,
+        "platformId": 190,
+        "accountId": 35067
+    },
+    {
+        "id": 5249,
+        "platformId": 191,
+        "accountId": 35067
+    },
+    {
+        "id": 5250,
+        "platformId": 188,
+        "accountId": 35067
+    },
+    {
+        "id": 5251,
+        "platformId": 189,
+        "accountId": 35067
+    },
+    {
+        "id": 5252,
+        "platformId": 178,
+        "accountId": 35067
+    },
+    {
+        "id": 5253,
+        "platformId": 179,
+        "accountId": 35067
+    },
+    {
+        "id": 5254,
+        "platformId": 176,
+        "accountId": 35067
+    },
+    {
+        "id": 5255,
+        "platformId": 177,
+        "accountId": 35067
+    },
+    {
+        "id": 5256,
+        "platformId": 182,
+        "accountId": 35067
+    },
+    {
+        "id": 5257,
+        "platformId": 181,
+        "accountId": 35067
+    },
+    {
+        "id": 5258,
+        "platformId": 205,
+        "accountId": 35067
+    },
+    {
+        "id": 5259,
+        "platformId": 204,
+        "accountId": 35067
+    },
+    {
+        "id": 5260,
+        "platformId": 207,
+        "accountId": 35067
+    },
+    {
+        "id": 5261,
+        "platformId": 201,
+        "accountId": 35067
+    },
+    {
+        "id": 5262,
+        "platformId": 200,
+        "accountId": 35067
+    },
+    {
+        "id": 5263,
+        "platformId": 203,
+        "accountId": 35067
+    },
+    {
+        "id": 5264,
+        "platformId": 202,
+        "accountId": 35067
+    },
+    {
+        "id": 5265,
+        "platformId": 197,
+        "accountId": 35067
+    },
+    {
+        "id": 5266,
+        "platformId": 199,
+        "accountId": 35067
+    },
+    {
+        "id": 5267,
+        "platformId": 198,
+        "accountId": 35067
+    },
+    {
+        "id": 5268,
+        "platformId": 193,
+        "accountId": 35067
+    },
+    {
+        "id": 5269,
+        "platformId": 192,
+        "accountId": 35067
+    },
+    {
+        "id": 5270,
+        "platformId": 195,
+        "accountId": 35067
+    },
+    {
+        "id": 5271,
+        "platformId": 194,
+        "accountId": 35067
+    },
+    {
+        "id": 5272,
+        "platformId": 223,
+        "accountId": 35067
+    },
+    {
+        "id": 5273,
+        "platformId": 216,
+        "accountId": 35067
+    },
+    {
+        "id": 5274,
+        "platformId": 217,
+        "accountId": 35067
+    },
+    {
+        "id": 5275,
+        "platformId": 219,
+        "accountId": 35067
+    },
+    {
+        "id": 5276,
+        "platformId": 212,
+        "accountId": 35067
+    },
+    {
+        "id": 5277,
+        "platformId": 213,
+        "accountId": 35067
+    },
+    {
+        "id": 5278,
+        "platformId": 215,
+        "accountId": 35067
+    },
+    {
+        "id": 5279,
+        "platformId": 208,
+        "accountId": 35067
+    },
+    {
+        "id": 5280,
+        "platformId": 209,
+        "accountId": 35067
+    },
+    {
+        "id": 5281,
+        "platformId": 210,
+        "accountId": 35067
+    },
+    {
+        "id": 5282,
+        "platformId": 211,
+        "accountId": 35067
+    },
+    {
+        "id": 5283,
+        "platformId": 238,
+        "accountId": 35067
+    },
+    {
+        "id": 5284,
+        "platformId": 237,
+        "accountId": 35067
+    },
+    {
+        "id": 5285,
+        "platformId": 236,
+        "accountId": 35067
+    },
+    {
+        "id": 5286,
+        "platformId": 235,
+        "accountId": 35067
+    },
+    {
+        "id": 5287,
+        "platformId": 232,
+        "accountId": 35067
+    },
+    {
+        "id": 5288,
+        "platformId": 231,
+        "accountId": 35067
+    },
+    {
+        "id": 5289,
+        "platformId": 230,
+        "accountId": 35067
+    },
+    {
+        "id": 5290,
+        "platformId": 229,
+        "accountId": 35067
+    },
+    {
+        "id": 5291,
+        "platformId": 228,
+        "accountId": 35067
+    },
+    {
+        "id": 5292,
+        "platformId": 227,
+        "accountId": 35067
+    },
+    {
+        "id": 5293,
+        "platformId": 226,
+        "accountId": 35067
+    },
+    {
+        "id": 5294,
+        "platformId": 225,
+        "accountId": 35067
+    },
+    {
+        "id": 5295,
+        "platformId": 224,
+        "accountId": 35067
+    },
+    {
+        "id": 5296,
+        "platformId": 250,
+        "accountId": 35067
+    },
+    {
+        "id": 5297,
+        "platformId": 248,
+        "accountId": 35067
+    },
+    {
+        "id": 5298,
+        "platformId": 249,
+        "accountId": 35067
+    },
+    {
+        "id": 5299,
+        "platformId": 247,
+        "accountId": 35067
+    },
+    {
+        "id": 5300,
+        "platformId": 244,
+        "accountId": 35067
+    },
+    {
+        "id": 5301,
+        "platformId": 242,
+        "accountId": 35067
+    },
+    {
+        "id": 5302,
+        "platformId": 240,
+        "accountId": 35067
+    },
+    {
+        "id": 5303,
+        "platformId": 241,
+        "accountId": 35067
+    }
+]<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-21:Actual Text : "HTTP status=200" matches with ,  Expected Text : "HTTP status=200"<br>
+                                <b>Step: [Verify Nodes]</b><br>
+                                >        Step-22:Response contains Expected Nodes.....id<br>
+                                >        Step-23:Response contains Expected Nodes..... platformId<br>
+                                >        Step-24:Response contains Expected Nodes..... accountId<br>
+                                <b>Step: [Platform One Harness Create All Platform Permissions API]</b><br>
+                                >        Step-25:Response contains Given accountId. 35067<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Create Platform Permission API .">verifyCreatePlatformPermissionAPI</span>
+      </td>
+  <td class="duration">
+    24.318s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Create Platform Permission API]</b><br>
+                                >        Step-9:Verifying Create Platform Permission API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness Create Platform Permission API]</b><br>
+                                >        Step-12:Clicking on Create Platform Permission. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Create Platform Permission')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Type "35067" in "//input[@name='accountId']"<br>
+                                >        Step-16:Entering Entity Platform ID. <br>
+                                >        Step-17:Type "11" in "//input[@name='platformId']"<br>
+                                >        Step-18:Clicking on Submit Button. <br>
+                                >        Step-19:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-20:Pause: 8 secs<br>
+                                >        Step-21:Verify Response for Create Platform Permission API. <br>
+                                >        Step-22:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=200
+{
+    "id": 5119,
+    "platformId": 11,
+    "accountId": 35067
+}<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-23:Actual Text : "HTTP status=200" matches with ,  Expected Text : "HTTP status=200"<br>
+                                <b>Step: [Verify Nodes]</b><br>
+                                >        Step-24:Response contains Expected Nodes.....id<br>
+                                >        Step-25:Response contains Expected Nodes..... platformId<br>
+                                >        Step-26:Response contains Expected Nodes..... accountId<br>
+                                <b>Step: [Platform One Harness Create Platform Permission API]</b><br>
+                                >        Step-27:Response contains Given platformId. 11<br>
+                                >        Step-28:Response contains Given accountId. 35067<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Delete All Platform Permissions API .">verifyDeleteAllPlatformPermissionsAPI</span>
+      </td>
+  <td class="duration">
+    22.636s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Delete All Platform Permissions API]</b><br>
+                                >        Step-9:Verifying Delete All Platform Permissions API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness Delete All Platform Permissions API]</b><br>
+                                >        Step-12:Clicking on Delete All Platform Permissions. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Delete All Platform Permissions')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Type "35067" in "//input[@name='accountId']"<br>
+                                >        Step-16:Clicking on Submit Button. <br>
+                                >        Step-17:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-18:Pause: 8 secs<br>
+                                >        Step-19:Verify Response for Delete All Platform Permissions API. <br>
+                                >        Step-20:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=204<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-21:Actual Text : "HTTP status=204" matches with ,  Expected Text : "HTTP status=204"<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies List All Permissions For Account API .">verifyListAllPermissionsForAccountAPI</span>
+      </td>
+  <td class="duration">
+    21.740s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness List All Permissions For Account API]</b><br>
+                                >        Step-9:Verifying List All Permissions For Account API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness List All Permissions For Account API]</b><br>
+                                >        Step-12:Clicking on List All Permissions For Account. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'List All Permissions For Account')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Type "35067" in "//input[@name='accountId']"<br>
+                                >        Step-16:Clicking on Submit Button. <br>
+                                >        Step-17:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-18:Pause: 8 secs<br>
+                                >        Step-19:Verify Response for List All Permissions For Account API. <br>
+                                >        Step-20:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=200
+[
+    {
+        "id": 5119,
+        "platformId": 11,
+        "accountId": 35067
+    }
+]<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-21:Actual Text : "HTTP status=200" matches with ,  Expected Text : "HTTP status=200"<br>
+                                <b>Step: [Verify Nodes]</b><br>
+                                >        Step-22:Response contains Expected Nodes.....id<br>
+                                >        Step-23:Response contains Expected Nodes..... platformId<br>
+                                >        Step-24:Response contains Expected Nodes..... accountId<br>
+                                <b>Step: [Platform One Harness List All Permissions For Account API]</b><br>
+                                >        Step-25:Response contains Given accountId. 35067<br>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

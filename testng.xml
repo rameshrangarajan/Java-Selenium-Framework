@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Nlpro Suite" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.test.testng.ExtentReporterNG" />
+	</listeners>
+	<test name="Nlpro testing1">
+
+		<groups>
+			<run>
+				<include name="Regression" />
+
+			</run>
+		</groups>
+		<classes>
+			<class name="com.test.NLPro.NlproBasicFunctionality">
+
+			</class>
+
+		</classes>
+	</test>
+	<!--<test name="Nlpro testing2">
+
+		<groups>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.test.NLPro.NlproBasicFunctionality" />
+			<class name="com.test.NLPro.NlproTemplateFunctionality" />
+             <class name="com.test.NLPro.NlproLookupFunctionality" />
+             <class name="com.test.NLPro.NlproPhrasesScanFunctionality" />
+             <class name="com.test.NLPro.NlproPhrasesTrainFunctionality" />
+             <class name="com.test.NLPro.NlproNamedEntityTrainFunctionality" />
+             <class name="com.test.NLPro.NlproRulesFunctionality" />
+			
+
+		</classes>
+	</test> -->
+
+</suite> 
+
+

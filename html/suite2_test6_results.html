@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - PlatformOne_Regression_test-6</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>PlatformOne_Regression_test-6</h1>
+<p>
+  Test duration: 235.536s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Create Platform Permission API .">verifyCreatePlatformPermissionAPI</span>
+      </td>
+  <td class="duration">
+    26.281s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Create Platform Permission API]</b><br>
+                                >        Step-9:Verifying Create Platform Permission API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness Create Platform Permission API]</b><br>
+                                >        Step-12:Clicking on Create Platform Permission. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Create Platform Permission')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Type "35067" in "//input[@name='accountId']"<br>
+                                >        Step-16:Entering Entity Platform ID. <br>
+                                >        Step-17:Type "11" in "//input[@name='platformId']"<br>
+                                >        Step-18:Clicking on Submit Button. <br>
+                                >        Step-19:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-20:Pause: 8 secs<br>
+                                >        Step-21:Verify Response for Create Platform Permission API. <br>
+                                >        Step-22:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=400
+[
+    {
+        "value": "The Account with an ID of 35067 was not found.",
+        "level": "Warning"
+    }
+]<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-23:<font color='red'>>        Actual Text : "HTTP status=400" doesn't match with ,  Expected Text : "HTTP status=200"</font> <a href="file:/C:/Snapshots/npp-automation/Snapshot_201505041426256586firefox.png" target=_blank>Snapshot</a> <a href="file:/C:/Snapshots/npp-automation/Snapshot_201505041426256586firefox.html" target=_blank>html</a><br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.Error: &lt;font color=&apos;red&apos;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Actual Text : &quot;HTTP status=400&quot; doesn&apos;t match with ,&nbsp; Expected Text : &quot;HTTP status=200&quot;&lt;/font&gt; &lt;a href=&quot;file:/C:/Snapshots/npp-automation/Snapshot_201505041426256586firefox.png&quot; target=_blank&gt;Snapshot&lt;/a&gt; &lt;a href=&quot;file:/C:/Snapshots/npp-automation/Snapshot_201505041426256586firefox.html&quot; target=_blank&gt;html&lt;/a&gt;</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              com.saf.global.ActionMethods.logWithScreenshot(ActionMethods.java:808)<br />
+              com.saf.global.ActionMethods.log(ActionMethods.java:684)<br />
+              com.NPP.global.GlobalCommonMethods.verifyTextMatching(GlobalCommonMethods.java:242)<br />
+              com.NPP.PlatformOneHarness.PlatformOneHarnessPlatformPermission.verifyStatusCode(PlatformOneHarnessPlatformPermission.java:192)<br />
+              com.NPP.PlatformOneHarness.PlatformOneHarnessPlatformPermission.platformOneHarnessCreatePlatformPermissionAPI(PlatformOneHarnessPlatformPermission.java:31)<br />
+              com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission.verifyCreatePlatformPermissionAPI(PlatformOneHarness_PlatformPermission.java:27)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Delete Platform Permissions API .">verifyDeletePlatformPermissionsAPI</span>
+      </td>
+  <td class="duration">
+    27.278s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Delete Platform Permissions API]</b><br>
+                                >        Step-9:Verifying Delete Platform Permissions API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness Delete Platform Permissions API]</b><br>
+                                >        Step-12:Clicking on Delete Platform Permissions. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Delete Platform Permission')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Type "35067" in "//input[@name='accountId']"<br>
+                                >        Step-16:Entering Entity Platform ID. <br>
+                                >        Step-17:Type "11" in "//input[@name='platformId']"<br>
+                                >        Step-18:Clicking on Submit Button. <br>
+                                >        Step-19:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-20:Pause: 8 secs<br>
+                                >        Step-21:Verify Response for Delete Platform Permissions API. <br>
+                                >        Step-22:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=400
+[
+    {
+        "value": "The account does not have access to the platform specified.",
+        "level": "Warning"
+    }
+]<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-23:<font color='red'>>        Actual Text : "HTTP status=400" doesn't match with ,  Expected Text : "HTTP status=200"</font> <a href="file:/C:/Snapshots/npp-automation/Snapshot_201505041429315569firefox.png" target=_blank>Snapshot</a> <a href="file:/C:/Snapshots/npp-automation/Snapshot_201505041429315569firefox.html" target=_blank>html</a><br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.Error: &lt;font color=&apos;red&apos;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Actual Text : &quot;HTTP status=400&quot; doesn&apos;t match with ,&nbsp; Expected Text : &quot;HTTP status=200&quot;&lt;/font&gt; &lt;a href=&quot;file:/C:/Snapshots/npp-automation/Snapshot_201505041429315569firefox.png&quot; target=_blank&gt;Snapshot&lt;/a&gt; &lt;a href=&quot;file:/C:/Snapshots/npp-automation/Snapshot_201505041429315569firefox.html&quot; target=_blank&gt;html&lt;/a&gt;</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              com.saf.global.ActionMethods.logWithScreenshot(ActionMethods.java:808)<br />
+              com.saf.global.ActionMethods.log(ActionMethods.java:684)<br />
+              com.NPP.global.GlobalCommonMethods.verifyTextMatching(GlobalCommonMethods.java:242)<br />
+              com.NPP.PlatformOneHarness.PlatformOneHarnessPlatformPermission.verifyStatusCode(PlatformOneHarnessPlatformPermission.java:192)<br />
+              com.NPP.PlatformOneHarness.PlatformOneHarnessPlatformPermission.platformOneHarnessDeletePlatformPermissionsAPI(PlatformOneHarnessPlatformPermission.java:181)<br />
+              com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission.verifyDeletePlatformPermissionsAPI(PlatformOneHarness_PlatformPermission.java:56)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies List All Permissions For Account API .">verifyListAllPermissionsForAccountAPI</span>
+      </td>
+  <td class="duration">
+    23.856s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness List All Permissions For Account API]</b><br>
+                                >        Step-9:Verifying List All Permissions For Account API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness List All Permissions For Account API]</b><br>
+                                >        Step-12:Clicking on List All Permissions For Account. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'List All Permissions For Account')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Type "35067" in "//input[@name='accountId']"<br>
+                                >        Step-16:Clicking on Submit Button. <br>
+                                >        Step-17:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-18:Pause: 8 secs<br>
+                                >        Step-19:Verify Response for List All Permissions For Account API. <br>
+                                >        Step-20:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=200
+[]<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-21:Actual Text : "HTTP status=200" matches with ,  Expected Text : "HTTP status=200"<br>
+                                <b>Step: [Verify Nodes]</b><br>
+                                >        Step-22:<font color='red'>>        Response does not contain the Expected Node : id</font> <a href="file:/C:/Snapshots/npp-automation/Snapshot_201505041427117407firefox.png" target=_blank>Snapshot</a> <a href="file:/C:/Snapshots/npp-automation/Snapshot_201505041427117407firefox.html" target=_blank>html</a><br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.Error: &lt;font color=&apos;red&apos;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response does not contain the Expected Node : id&lt;/font&gt; &lt;a href=&quot;file:/C:/Snapshots/npp-automation/Snapshot_201505041427117407firefox.png&quot; target=_blank&gt;Snapshot&lt;/a&gt; &lt;a href=&quot;file:/C:/Snapshots/npp-automation/Snapshot_201505041427117407firefox.html&quot; target=_blank&gt;html&lt;/a&gt;</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              com.saf.global.ActionMethods.logWithScreenshot(ActionMethods.java:808)<br />
+              com.saf.global.ActionMethods.log(ActionMethods.java:684)<br />
+              com.NPP.PlatformOneHarness.PlatformOneHarnessPlatformPermission.verifyNodes(PlatformOneHarnessPlatformPermission.java:209)<br />
+              com.NPP.PlatformOneHarness.PlatformOneHarnessPlatformPermission.platformOneHarnessListAllPermissionsForAccountAPI(PlatformOneHarnessPlatformPermission.java:82)<br />
+              com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission.verifyListAllPermissionsForAccountAPI(PlatformOneHarness_PlatformPermission.java:35)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.test.PlatformOneHarness.PlatformOneHarness_PlatformPermission</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Create All Platform Permissions API .">verifyCreateAllPlatformPermissionsAPI</span>
+      </td>
+  <td class="duration">
+    21.807s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Create All Platform Permissions API]</b><br>
+                                >        Step-9:Verifying Create All Platform Permissions API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness Create All Platform Permissions API]</b><br>
+                                >        Step-12:Clicking on Create All Platform Permissions. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Create All Platform Permissions')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Type "35067" in "//input[@name='accountId']"<br>
+                                >        Step-16:Clicking on Submit Button. <br>
+                                >        Step-17:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-18:Pause: 8 secs<br>
+                                >        Step-19:Verify Response for Create All Platform Permissions API. <br>
+                                >        Step-20:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=200
+[
+    {
+        "id": 4318,
+        "platformId": 1,
+        "accountId": 35067
+    },
+    {
+        "id": 4319,
+        "platformId": 2,
+        "accountId": 35067
+    },
+    {
+        "id": 4320,
+        "platformId": 3,
+        "accountId": 35067
+    },
+    {
+        "id": 4321,
+        "platformId": 4,
+        "accountId": 35067
+    },
+    {
+        "id": 4322,
+        "platformId": 5,
+        "accountId": 35067
+    },
+    {
+        "id": 4323,
+        "platformId": 6,
+        "accountId": 35067
+    },
+    {
+        "id": 4324,
+        "platformId": 7,
+        "accountId": 35067
+    },
+    {
+        "id": 4325,
+        "platformId": 8,
+        "accountId": 35067
+    },
+    {
+        "id": 4326,
+        "platformId": 9,
+        "accountId": 35067
+    },
+    {
+        "id": 4327,
+        "platformId": 10,
+        "accountId": 35067
+    },
+    {
+        "id": 4328,
+        "platformId": 11,
+        "accountId": 35067
+    },
+    {
+        "id": 4329,
+        "platformId": 12,
+        "accountId": 35067
+    },
+    {
+        "id": 4330,
+        "platformId": 13,
+        "accountId": 35067
+    },
+    {
+        "id": 4331,
+        "platformId": 14,
+        "accountId": 35067
+    },
+    {
+        "id": 4332,
+        "platformId": 15,
+        "accountId": 35067
+    },
+    {
+        "id": 4333,
+        "platformId": 17,
+        "accountId": 35067
+    },
+    {
+        "id": 4334,
+        "platformId": 16,
+        "accountId": 35067
+    },
+    {
+        "id": 4335,
+        "platformId": 19,
+        "accountId": 35067
+    },
+    {
+        "id": 4336,
+        "platformId": 18,
+        "accountId": 35067
+    },
+    {
+        "id": 4337,
+        "platformId": 21,
+        "accountId": 35067
+    },
+    {
+        "id": 4338,
+        "platformId": 20,
+        "accountId": 35067
+    },
+    {
+        "id": 4339,
+        "platformId": 23,
+        "accountId": 35067
+    },
+    {
+        "id": 4340,
+        "platformId": 22,
+        "accountId": 35067
+    },
+    {
+        "id": 4341,
+        "platformId": 25,
+        "accountId": 35067
+    },
+    {
+        "id": 4342,
+        "platformId": 24,
+        "accountId": 35067
+    },
+    {
+        "id": 4343,
+        "platformId": 27,
+        "accountId": 35067
+    },
+    {
+        "id": 4344,
+        "platformId": 26,
+        "accountId": 35067
+    },
+    {
+        "id": 4345,
+        "platformId": 29,
+        "accountId": 35067
+    },
+    {
+        "id": 4346,
+        "platformId": 28,
+        "accountId": 35067
+    },
+    {
+        "id": 4347,
+        "platformId": 31,
+        "accountId": 35067
+    },
+    {
+        "id": 4348,
+        "platformId": 30,
+        "accountId": 35067
+    },
+    {
+        "id": 4349,
+        "platformId": 238,
+        "accountId": 35067
+    },
+    {
+        "id": 4350,
+        "platformId": 32,
+        "accountId": 35067
+    },
+    {
+        "id": 4351,
+        "platformId": 233,
+        "accountId": 35067
+    },
+    {
+        "id": 4352,
+        "platformId": 255,
+        "accountId": 35067
+    },
+    {
+        "id": 4353,
+        "platformId": 252,
+        "accountId": 35067
+    },
+    {
+        "id": 4354,
+        "platformId": 185,
+        "accountId": 35067
+    },
+    {
+        "id": 4355,
+        "platformId": 55,
+        "accountId": 35067
+    },
+    {
+        "id": 4356,
+        "platformId": 54,
+        "accountId": 35067
+    },
+    {
+        "id": 4357,
+        "platformId": 53,
+        "accountId": 35067
+    },
+    {
+        "id": 4358,
+        "platformId": 52,
+        "accountId": 35067
+    },
+    {
+        "id": 4359,
+        "platformId": 178,
+        "accountId": 35067
+    },
+    {
+        "id": 4360,
+        "platformId": 246,
+        "accountId": 35067
+    },
+    {
+        "id": 4361,
+        "platformId": 179,
+        "accountId": 35067
+    },
+    {
+        "id": 4362,
+        "platformId": 244,
+        "accountId": 35067
+    },
+    {
+        "id": 4363,
+        "platformId": 245,
+        "accountId": 35067
+    },
+    {
+        "id": 4364,
+        "platformId": 242,
+        "accountId": 35067
+    },
+    {
+        "id": 4365,
+        "platformId": 240,
+        "accountId": 35067
+    },
+    {
+        "id": 4366,
+        "platformId": 241,
+        "accountId": 35067
+    }
+]<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-21:Actual Text : "HTTP status=200" matches with ,  Expected Text : "HTTP status=200"<br>
+                                <b>Step: [Verify Nodes]</b><br>
+                                >        Step-22:Response contains Expected Nodes.....id<br>
+                                >        Step-23:Response contains Expected Nodes..... platformId<br>
+                                >        Step-24:Response contains Expected Nodes..... accountId<br>
+                                <b>Step: [Platform One Harness Create All Platform Permissions API]</b><br>
+                                >        Step-25:Response contains Given accountId. 35067<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="The test case verifies Delete All Platform Permissions API .">verifyDeleteAllPlatformPermissionsAPI</span>
+      </td>
+  <td class="duration">
+    22.729s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <b>Step: [Platform One Harness Delete All Platform Permissions API]</b><br>
+                                >        Step-9:Verifying Delete All Platform Permissions API<br>
+                                <b>Step: [Click On Platform Permission API Link]</b><br>
+                                >        Step-10:Clicking on Platform Permission API. <br>
+                                >        Step-11:Click "//span[contains(.,'Platform Permission')]"<br>
+                                <b>Step: [Platform One Harness Delete All Platform Permissions API]</b><br>
+                                >        Step-12:Clicking on Delete All Platform Permissions. <br>
+                                >        Step-13:Click "//div[@class='panel-collapse collapsing']//a[contains(.,'Delete All Platform Permissions')]"<br>
+                                >        Step-14:Entering Account ID. <br>
+                                >        Step-15:Type "35067" in "//input[@name='accountId']"<br>
+                                >        Step-16:Clicking on Submit Button. <br>
+                                >        Step-17:Click "//div[@class='controls']/button[@class='btn']"<br>
+                                >        Step-18:Pause: 8 secs<br>
+                                >        Step-19:Verify Response for Delete All Platform Permissions API. <br>
+                                >        Step-20:GetText from Element: "//h5[text()='Response']//following-sibling::pre|pre[contains(.,'HTTP status')]", HTTP status=204<br>
+                                <b>Step: [Verify Status Code]</b><br>
+                                >        Step-21:Actual Text : "HTTP status=204" matches with ,  Expected Text : "HTTP status=204"<br>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
