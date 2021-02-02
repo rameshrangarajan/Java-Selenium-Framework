@@ -191,4 +191,7 @@ public class NlproWebElementLocators extends GlobalCommonMethods {
 	public String NLPRO_Named_Entity_Train_Model_Selector_In_Popup_Locator = "id=modelList";
 	public String NLPRO_Named_Entity_Train_Process_Button_In_Popup_Locator = "id=processDefaultOption";
 	public String NLPRO_On_The_Fly_Training_All_Occurrences_Checkbox_Locator = "xpath=//input[@type='checkbox']";
+	
+	public String Google_Search_Bar_Locator = "name=q";
+	public String Google_Search_Result_Label_Locator = "xpath=//div[@class='tF2Cxc']//div[@class='yuRUbf']//a//h3//span";
 }

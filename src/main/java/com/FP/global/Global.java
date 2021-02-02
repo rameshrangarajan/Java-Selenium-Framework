@@ -79,6 +79,7 @@ public class Global extends CustomReport {
 	public static String nlprophrasestrainlocalurl = LoadProperties.NLPRO_LOCAL_PHRASES_TRAIN_URL;
 	public static String nlpronamedentitytrainpurl = LoadProperties.NLPRO_NAMED_ENTITY_TRAIN_URL;
 	public static String nlpronamedentitytrainlocalurl = LoadProperties.NLPRO_LOCAL_NAMED_ENTITY_TRAIN_URL;
+	public static String googleurl = LoadProperties.GOOGLE_URL;
 	public String os = System.getProperty("os.name");
 	public Properties OR = null;
 	public WebDriver dr = null;

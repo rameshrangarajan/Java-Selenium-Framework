@@ -60,6 +60,24 @@ public class NLProTest extends NlproWebElementLocators {
 		}
 	}
 	
+	public boolean testGoogleSite(String searchtext, String texttoverify) throws AWTException {
+		
+		pause(2);
+		//type(Google_Search_Bar_Locator, searchtext);
+		setValue(Google_Search_Bar_Locator, searchtext);
+		pause(3);
+		//clickAndWait(Google_Search_Bar_Locator);
+		pressEnterKey1(Google_Search_Bar_Locator);
+		pause(3);
+		return verifyTextMatching(texttoverify, Google_Search_Result_Label_Locator);
+		
+	}
+	
+	public void enterSearchText(String searchtext) {
+		
+		
+	}
+	
 	public boolean verifyErrorMessageForInvalidFileDuringTextFileUpload(String filename, String expectedText) {
 		pause(3);
 		uploadingTextFile(filename);

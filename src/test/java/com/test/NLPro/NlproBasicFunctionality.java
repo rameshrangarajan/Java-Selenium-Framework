@@ -20,8 +20,30 @@ import com.FP.global.*;
 public class NlproBasicFunctionality extends NlproPageFactory {
 
 	
-	public static String excelPath1 = "D:\\Framework_New\\Framework\\Framework\\src\\main\\java\\com\\FP\\data\\Data.xlsx";
+	public static String excelPath1 = "G:\\Java-Selenium-Framework\\src\\main\\java\\com\\FP\\data\\DataNew.xlsx";
+	
+	//public static String excelPath1 = "G:\\DataNew.xlsx";
+	//public static String excelPath1 = "";
 	ExcelDataConfig excel = new ExcelDataConfig(excelPath1);
+	
+	
+	  @Test(description = "Tests Simple Google Functionality" , groups = { "Test" }) 
+	  public void testGoogle() throws InterruptedException,AWTException {
+	  
+	  log("Starting test...."); log("Logging in....");
+	  open(GoogleURL).get(googleurl);
+	  
+	  
+	  try {
+		  
+		  NLProTest().testGoogleSite(excel.getData(0, 1, 0), excel.getData(0, 1, 1));
+		  //NLProTest().testGoogleSite("Selenium", "Selenium WebDriver");
+	  
+	  } catch (Exception e) { 
+		  e.printStackTrace(); } log("Test Completed...."); 
+	  
+	  }
+	 
 	
 	@Test(description = "The test case verifies upload text file functionality for NLPRO Scan page", groups = { "Regression" })
 	public void verifyUploadTextFileFunctionality() throws InterruptedException,AWTException {
@@ -1514,5 +1536,9 @@ public class NlproBasicFunctionality extends NlproPageFactory {
 			
 	}
 	
-	
+	@Test
+	public void testMethod() {
+		
+		System.out.println("Hello World");
+	}
 }

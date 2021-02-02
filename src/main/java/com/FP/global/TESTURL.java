@@ -14,5 +14,6 @@ public class TESTURL extends Global {
 	public String NLProPhrasesTrainURL = "http://10.20.14.92:8080/nlpro/app/index.html#/contractTrain";
 	public String NLProNamedEntityTrainLocalURL = "http://localhost:8080/nlpro/app/index.html#/train";
 	public String NLProNamedEntityTrainURL = "http://10.20.14.92:8080/nlpro/app/index.html#/train";
+	public String GoogleURL = "https://www.google.com/";
 
 }

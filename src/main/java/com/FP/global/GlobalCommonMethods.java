@@ -269,6 +269,12 @@ public class GlobalCommonMethods extends Global {
 	    ro.keyRelease(KeyEvent.VK_ENTER);
 	}
 	
+	public void pressEnterKey1(String locator) {
+		
+		WebElement element = waitForElement(locator);
+		element.sendKeys(Keys.ENTER);
+	}
+	
   public void pressDownArrowKey() throws AWTException {
 		
 		Robot ro = new Robot();

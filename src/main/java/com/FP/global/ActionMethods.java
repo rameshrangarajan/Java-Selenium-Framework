@@ -63,7 +63,7 @@ public class ActionMethods extends Logfile {
 	private boolean showVerifications = true;
 	private boolean takeScreenshots = true;
 	private String userDir = System.getProperty("user.dir");
-	private String snapshotDir = "C:/Snapshots/"
+	private String snapshotDir = "E:/Snapshots/"
 			+ userDir
 					.substring(userDir.lastIndexOf('\\') + 1, userDir.length());
 	private static int snapshot_counter = 0;
@@ -1227,12 +1227,23 @@ public WebElement GetElementLocator(String locator) throws Exception {
 		WebElement element = waitForElement(locator);
 		try {
 			setAttribute(element, "value", text);
+			
 		} catch (Exception e) {
 			fail("Unable to set value for \"" + getLocatorName(locator) + "\""
 					+ " Error: " + e.getMessage());
 		}
 	}
-
+	
+     public void setText(String locator, String text) {
+ 		WebElement element = waitForElement(locator);
+ 		try {
+ 			element.sendKeys(text);
+ 			
+ 		} catch (Exception e) {
+ 			fail("Unable to set value for \"" + getLocatorName(locator) + "\""
+ 					+ " Error: " + e.getMessage());
+ 		}
+ 	}
 	/**
 	 * Un-check checkbox specified by locator
 	 */

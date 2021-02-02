@@ -10,14 +10,13 @@
 
 		<groups>
 			<run>
-				<include name="Regression" />
+				<include name="Test" />
 
 			</run>
 		</groups>
 		<classes>
-			<class name="com.test.NLPro.NlproBasicFunctionality">
-
-			</class>
+			<class name="com.test.NLPro.NlproBasicFunctionality" />
+			<class name="com.test.NLPro.NlproLookupFunctionality" />
 
 		</classes>
 	</test>

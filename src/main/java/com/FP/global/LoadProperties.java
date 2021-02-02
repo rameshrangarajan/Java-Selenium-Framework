@@ -66,6 +66,8 @@ public class LoadProperties {
     public static final String NLPRO_NAMED_ENTITY_TRAIN_URL = getProperty("app_url", "http://10.20.14.92:8080/nlpro/app/index.html#/train");
 	
 	public static final String NLPRO_LOCAL_NAMED_ENTITY_TRAIN_URL = getProperty("app_url", "http://localhost:8080/nlpro/app/index.html#/train");
+	
+	public static final String GOOGLE_URL = getProperty("app_url", "http://www.google.com");
 
 	
 	public static String getProperty(String key, String defaultValue) {

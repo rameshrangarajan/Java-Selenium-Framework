@@ -2,6 +2,7 @@ package com.FP.global;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class InstanPage {
@@ -15,6 +16,7 @@ public class InstanPage {
 			try {
 				System.out.println(LoadProperties.BROWSER
 						+ " Browser has been Initialized");
+				System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver.exe");
 				driver = new FirefoxDriver();
 			} catch (Exception e) {
 
@@ -25,7 +27,10 @@ public class InstanPage {
 				System.out.println(LoadProperties.BROWSER
 						+ " Browser has been Initialized");
 				System.setProperty("webdriver.chrome.driver", driverPath
-						+ "chromedriver_2_33.exe");
+						+ "chromedriver_88.exe");
+				//ChromeOptions chromeOptions= new ChromeOptions();
+				//chromeOptions.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+				//System.setProperty("webdriver.chrome.driver", "G:\\Java-Selenium-Framework\\drivers\\chromedriver_88.exe");
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 			} catch (Exception e) {
